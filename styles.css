@@ -1,0 +1,58 @@
+@font-face {
+    font-family: downloaded-font;
+    src: url(fonts/MilestoneFreeVersion-Script.otf);
+}
+html {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+}
+
+body {
+    margin: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 70vw;
+    height: 100vh;
+    display:flex;
+}
+
+.banner {
+    flex: 1 1 0;
+    background-image: url(imgs/cec3220a180c705bb1499b1b7ad2e907.png);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    position: relative;
+}
+
+.banner-heading {
+    color:white;
+    font-size: 5rem;
+    font-family: downloaded-font, sans-serif;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.4);
+    padding:20px;
+    margin-top: 500px;
+}
+
+.main-container {
+    flex: 1.6 1 0;
+    display:flex;
+    flex-direction: column;
+}
+
+.mc-top {
+    background-color: lightpink;
+    flex: 1;
+}
+
+.mc-form {
+    background-color: white;
+    flex: 1;
+}
+
+.mc-bottom {
+    background-color: lightpink;
+    flex: 1;
+}
