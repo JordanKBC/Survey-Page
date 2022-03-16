@@ -8,11 +8,12 @@ html {
     background-color: black;
     display:flex;
     justify-content: center;
+    height:100%
 }
 
 body {
     margin: inherit;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Monaco, Monospace;
     width: 70vw;
     height: 100vh;
     display:flex;
@@ -24,6 +25,7 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 10%;
     position: relative;
+    height:min(100vh,200vh);
 }
 
 .banner-heading {
@@ -33,7 +35,8 @@ body {
     text-align: center;
     background-color: rgba(0,0,0, 0.4);
     padding:20px;
-    margin-top: 500px;
+    margin-top: 300px;
+    
 }
 
 .main-container {
@@ -44,15 +47,91 @@ body {
 
 .mc-top {
     background-color: lightpink;
-    flex: 1;
+    flex: 1 0 0;
+    font:inherit;
+    font-size: 2rem;
+    position: relative;
+}
+
+.mc-top-text {
+    padding-left:50px;
+    padding-right: 200px;
+}
+
+.first {
+    margin-top: 200px;
+}
+
+.second {
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .mc-form {
     background-color: white;
-    flex: 1;
+    flex: 1 0 0;
+    padding-left:50px;
+    padding-right: 100px;
+}
+
+.mc-form .header {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.f-container {
+    display:flex;
+    column-gap: 200px;
+}
+
+label, input {
+    font-family: Monaco, Monospace;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1.7rem;
+    display:block;
+    border-color: rgba(220, 220, 220, 0.8);
+    min-width: 300px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 3px 3px lightgray;
+}
+
+
+input:valid {
+    border: 1px solid green;
+}
+
+.f-unit {
+    margin-bottom: 30px;
 }
 
 .mc-bottom {
     background-color: lightpink;
-    flex: 1;
+    flex: 1 0 0;
+    padding-left:50px;
 }
+
+button[type="submit"] {
+    margin-top: 30px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    background: white;
+}
+
+
